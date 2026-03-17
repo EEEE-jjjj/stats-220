@@ -2,7 +2,7 @@
 
 ## About this repository
 
-This repository contains my for **STATS220** at the University of Auckland and some information about me.
+This repository contains my journey for **STATS220** at the University of Auckland and some information about me.
 
 In this course we learn about *R code*, including R and Markdown.
 
@@ -25,9 +25,9 @@ In this course we learn about *R code*, including R and Markdown.
 4. Bad sleeping pattern
 
 ---
-## A YouTube video of Max Verstappen  F1 2024 Sao Paulo Grand Prix
+## A YouTube video of Max Verstappen F1 2024 Sao Paulo Grand Prix
 
-[https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1](https://www.youtube.com/watch?v=rPapZJ8n3xs)
+[Watch the video](https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1)
 
 ---
 
