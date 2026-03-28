@@ -13,16 +13,19 @@ library(tidyverse)
 body {
   font-family: Arial, sans-serif;
   line-height: 1.7;
-  color: #222222;
+  color: #243447;
+  background-color: #f5f8fc;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 28px;
 }
 
 h2 {
-  color: #2c3e50;
-  border-bottom: 2px solid #d9e2ec;
+  color: #2c4a68;
+  border-bottom: 2px solid #dbe5ef;
   padding-bottom: 8px;
+  margin-top: 28px;
+  margin-bottom: 18px;
 }
 
 p {
@@ -30,8 +33,12 @@ p {
   margin-bottom: 16px;
 }
 
+strong {
+  color: #1f4e79;
+}
+
 figure {
-  margin: 24px 0 20px 0;
+  margin: 28px 0 20px 0;
 }
 
 img {
@@ -39,6 +46,15 @@ img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  border-radius: 8px;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+code {
+  color: #1f4e79;
 }
 ```
 
@@ -95,7 +111,7 @@ latest_data %>%
   )
 ```
 The bar chart above shows the distribution of vehicle types in the dataset. This makes it easier to identify which kinds of vehicles appeared most often during the observation period.
-```{r}
+```{r fig.width=8, fig.height=4}
 latest_data %>%
   ggplot(aes(x = brand_origin)) +
   geom_bar() +
@@ -109,7 +125,7 @@ latest_data %>%
 This second bar chart compares the brand origins of the vehicles observed. It provides a simple way to see which brand origins appeared more frequently in the dataset.
 
 Overall, this report shows how observational data can be collected, summarised, and communicated visually through R Markdown. Because the report is connected to a published CSV, the summaries and graphs can change automatically when more observations are added.
-···
+
 ## Snapshot of the data
 
 **Total observations:** `r report_num_obs`  
