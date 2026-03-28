@@ -33,33 +33,6 @@ p {
   margin-bottom: 16px;
 }
 
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin: 22px 0 28px 0;
-}
-
-.summary-card {
-  background-color: #ffffff;
-  border: 1px solid #d9e3ee;
-  border-radius: 14px;
-  padding: 18px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-}
-
-.summary-label {
-  font-size: 14px;
-  color: #6b7c8f;
-  margin-bottom: 8px;
-}
-
-.summary-value {
-  font-size: 26px;
-  font-weight: bold;
-  color: #1f4e79;
-}
-
 figure {
   margin: 28px 0 18px 0;
 }
@@ -116,8 +89,6 @@ most_common_origin <- latest_data %>%
   slice(1) %>%
   pull(brand_origin)
 ```
-## Snapshot of the data
-<div class="summary-grid"> <div class="summary-card"> <div class="summary-label">Total observations</div> <div class="summary-value">`r report_num_obs`</div> </div> <div class="summary-card"> <div class="summary-label">Average cleanliness</div> <div class="summary-value">`r report_mean_clean`</div> </div> <div class="summary-card"> <div class="summary-label">Most common vehicle</div> <div class="summary-value">`r most_common_vehicle`</div> </div> <div class="summary-card"> <div class="summary-label">Top brand origin</div> <div class="summary-value">`r most_common_origin`</div> </div> </div>
 
 A total of `r report_num_obs` vehicle observations were recorded in this dataset.
 
@@ -150,6 +121,14 @@ latest_data %>%
 This second bar chart compares the brand origins of the vehicles observed. It provides a simple way to see which brand origins appeared more frequently in the dataset.
 
 Overall, this report shows how observational data can be collected, summarised, and communicated visually through R Markdown. Because the report is connected to a published CSV, the summaries and graphs can change automatically when more observations are added.
+
+## Snapshot of the data
+
+**Total observations:** `r report_num_obs`  
+**Average cleanliness:** `r report_mean_clean`  
+**Highest cleanliness score:** `r report_max_clean`  
+**Most common vehicle type:** `r most_common_vehicle`  
+**Most common brand origin:** `r most_common_origin`
 
 ## Key insights
 
